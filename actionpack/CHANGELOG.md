@@ -1,6 +1,12 @@
 *   Fix regression in mounted engine named routes generation for app deployed to
     a subdirectory. `relative_url_root` was prepended to the path twice (e.g.
     "/subdir/subdir/engine_path" instead of "/subdir/engine_path")
+*   Remove `respond_to`/`respond_with` placeholder methods, this functionality
+    has been extracted to the `responders` gem.
+
+    *Carlos Antonio da Silva*
+
+*   Remove deprecated assertion files.
 
     Fixes #20920. Fixes #21459.
 
